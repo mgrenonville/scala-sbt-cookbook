@@ -11,6 +11,7 @@ if (node[:scala_sbt][:barebone]) then
           owner "root"
           group "root"
           mode 01777
+          recursive true
           action :create
     end
 
