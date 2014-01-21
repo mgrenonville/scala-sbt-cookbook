@@ -23,14 +23,14 @@ if (node[:scala_sbt][:barebone]) then
     end
     
     remote_file "/opt/sbt/bin/sbt" do
-        source "https://raw.github.com/sbt/sbt-launcher-package/full-packaging/src/universal/bin/sbt"
+        source "https://raw.github.com/sbt/sbt-launcher-package/master/src/universal/bin/sbt"
         mode 0755
         action :create
         backup false
     end
 
     remote_file "/opt/sbt/bin/sbt-launch-lib.bash" do
-        source "https://raw.github.com/sbt/sbt-launcher-package/full-packaging/src/universal/bin/sbt-launch-lib.bash"
+        source "https://raw.github.com/sbt/sbt-launcher-package/master/src/universal/bin/sbt-launch-lib.bash"
         action :create
         mode 0755
         backup false
